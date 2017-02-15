@@ -14,13 +14,6 @@ services:
      - .:/usr/share/nginx/html
     networks:
      - wpnet
-  node:
-    image: ezynda3/bedrock-node:latest
-    volumes:
-      - .:/workspace
-    networks:
-      - wpnet
-    tty: true
   mysql:
     image: mysql:5.7
     ports:
