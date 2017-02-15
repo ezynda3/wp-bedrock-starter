@@ -20,6 +20,7 @@ services:
       - .:/workspace
     networks:
       - wpnet
+    tty: true
   mysql:
     image: mysql:5.7
     ports:
