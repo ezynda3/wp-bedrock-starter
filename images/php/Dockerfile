@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Hoang Stark <iam@hoangstark.com>
+MAINTAINER Ed Zynda <ezynda3@gmail.com>
 
 RUN locale-gen en_US.UTF-8
 

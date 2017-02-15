@@ -1,7 +1,7 @@
 version: '2'
 services:
   nginx:
-    image: hoangstark/bedrock-nginx:latest
+    image: ezynda3/bedrock-nginx:latest
     ports:
      - "80:80"
     volumes:
@@ -9,16 +9,15 @@ services:
     networks:
      - wpnet
   php:
-    image: hoangstark/bedrock-php:latest
+    image: ezynda3/bedrock-php:latest
     volumes:
      - .:/usr/share/nginx/html
     networks:
      - wpnet
   node:
-    image: node:latest
+    image: ezynda3/bedrock-node:latest
     volumes:
-      - .:/usr/share/nginx/html
-    command: tail -f /dev/null
+      - .:/workspace
     networks:
       - wpnet
   mysql:
